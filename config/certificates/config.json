@@ -1,0 +1,4 @@
+{
+    "cert": "/app/certificates/q3js.changeme.com.crt",
+    "key": "/app/certificates/q3js.changeme.com.key"
+}
