@@ -52,26 +52,26 @@ services:
     volumes:
       - ./config/certificates:/app/certificates:ro
 
-  q3js-dedicated-server-2:
-    container_name: q3js-dedicated-server-2
-    build: build/dedicated-server
-    env_file: .env
-    depends_on:
-      - q3js-content-server
-    volumes:
-      - ./config/dedicated-server/baseq3/server.cfg:/app/base/baseq3/server.cfg
-      - ./config/dedicated-server/cpma/server.cfg:/app/base/cpma/server.cfg
+  # q3js-dedicated-server-2:
+  #   container_name: q3js-dedicated-server-2
+  #   build: build/dedicated-server
+  #   env_file: .env
+  #   depends_on:
+  #     - q3js-content-server
+  #   volumes:
+  #     - ./config/dedicated-server/baseq3/server.cfg:/app/base/baseq3/server.cfg
+  #     - ./config/dedicated-server/cpma/server.cfg:/app/base/cpma/server.cfg
 
-  q3js-ds-wss-proxy-2:
-    container_name: q3js-ds-wss-proxy-2
-    build: build/wss-proxy
-    depends_on:
-      - q3js-dedicated-server-2
-    ports:
-      - 27962:27962
-    environment:
-      Q3JS_WSS_PROXY_ADDRESS: q3js-dedicated-server-2
-      Q3JS_WSS_PROXY_PORT: 27960
-      Q3JS_WSS_PORT: 27962
-    volumes:
-      - ./config/certificates:/app/certificates:ro
+  # q3js-ds-wss-proxy-2:
+  #   container_name: q3js-ds-wss-proxy-2
+  #   build: build/wss-proxy
+  #   depends_on:
+  #     - q3js-dedicated-server-2
+  #   ports:
+  #     - 27962:27962
+  #   environment:
+  #     Q3JS_WSS_PROXY_ADDRESS: q3js-dedicated-server-2
+  #     Q3JS_WSS_PROXY_PORT: 27960
+  #     Q3JS_WSS_PORT: 27962
+  #   volumes:
+  #     - ./config/certificates:/app/certificates:ro
