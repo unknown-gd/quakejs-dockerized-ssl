@@ -19,7 +19,7 @@ apt-get install -y libarchive-zip-perl zipmerge
 ```
 
 ## How to start?
-1. Set your domain name into .env as `Q3JS_DOMAIN`
+1. Set your domain name into `.env` as `Q3JS_DOMAIN`
 2. Change paths to your certificate and key in `certificates/config.json`
 3. Run `docker compose build && docker compose up -d`
 
