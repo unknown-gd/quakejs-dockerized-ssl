@@ -34,6 +34,7 @@ Lol, just run `docker compose down`
 
 #### Also check out:
 * [Quake 3 - Console variables](http://www.joz3d.net/html/q3console.html)
+* [Official Wiki](https://steamforge.net/wiki/index.php/How_to_setup_a_local_QuakeJS_server_under_Debian_9_or_Debian_10)
 
 ## How I can make clients connect to my server automatically?
 Just uncomment the line `args.push.apply( args, [ "+connect", "q3js.changeme.com:27961" ] )` in `index.ejs`
