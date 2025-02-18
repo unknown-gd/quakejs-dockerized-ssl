@@ -32,8 +32,12 @@ Lol, just run `docker compose down`
 * `config/dedicated-server` - Dedicated server configuration ( `baseq3` and `cpma` gamemodes )
 * `index.ejs` - Web client configuration
 
+#### Also check out:
+* [Quake 3 - Console variables](http://www.joz3d.net/html/q3console.html)
+
 ## How I can make clients connect to my server automatically?
 Just uncomment the line `args.push.apply( args, [ "+connect", "q3js.changeme.com:27961" ] )` in `index.ejs`
 
 ## How to use `cctools`? ( Repack and merge .pk3 files )
 [README.md](./cctools/README.md) [ `LF` ONLY ]
+
