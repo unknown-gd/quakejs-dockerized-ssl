@@ -1,6 +1,9 @@
 #!/bin/sh
 
-echo "[DS WSS Proxy] Starting..."
+echo "[WSS Proxy] Waiting for 40 seconds until all services are ready..."
+sleep 40
+
+echo "[WSS Proxy] Starting..."
 echo "Server Address: $Q3JS_WSS_PROXY_ADDRESS:$Q3JS_WSS_PROXY_PORT"
 echo "Listen Address: 0.0.0.0:$Q3JS_WSS_PORT"
 
