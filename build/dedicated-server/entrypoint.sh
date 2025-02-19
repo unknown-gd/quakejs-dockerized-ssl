@@ -1,7 +1,7 @@
 #!/bin/sh
 
-echo "[Dedicated Server] Waiting for 10 seconds until all services are ready..."
-sleep 10
+echo "[Dedicated Server] Waiting for 20 seconds until all services are ready..."
+sleep 20
 
 export Q3JS_DOMAIN="$Q3JS_DOMAIN:9000"
 
